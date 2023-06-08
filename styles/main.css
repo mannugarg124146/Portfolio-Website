@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0em;
+  margin: 0em;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  padding: 1rem 7rem;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  position: relative;
+  padding: 4rem 7rem;
+  /* border: 1px solid black; */
+}
+footer {
+  padding: 1rem 7rem 0.25rem 7rem;
+  /* border: 1px solid black; */
+}
+section {
+  padding: 6rem 0rem;
+  /* border: 1px solid black; */
+}
+
+/* navbar  */
+
+nav ul {
+  display: flex;
+  gap: 3rem;
+}
+nav ul li {
+  list-style: none;
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+nav ul li:hover {
+  font-weight: 600;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/* hero section  */
+
+.name {
+  /* border: 1px solid black; */
+  /* margin: 1rem; */
+  padding: 3rem 0rem;
+}
+
+.hero_name {
+  display: flex;
+  justify-content: space-between;
+}
+.name h3 {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.name h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.name h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+.btn {
+  display: inline-block;
+  padding: 0.45rem 0.65rem;
+  margin-top: 2.5rem;
+  font-weight: 200;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 7px;
+  background-color: #5372e2;
+}
+.creative_name {
+  padding: 2rem 2rem;
+  background-color: black;
+  border-radius: 12px;
+}
+.creative_name div {
+  margin: auto 0rem;
+}
+pre {
+  color: white;
+  margin-top: 1rem;
+}
+
+.herobg {
+  position: absolute;
+  width: 442px;
+  top: 0%;
+  right: 0%;
+  z-index: -1;
+}
+
+/* about  */
+
+.about p {
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+
+/* skills  */
+
+.skills ul {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: small;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+
+.skills ul li {
+  list-style-type: square;
+}
+
+/* progress bar  */
+
+.bar {
+  margin-top: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.progress_bar {
+  flex: 320px 1 0;
+  margin: 1em;
+}
+
+/* progress bar */
+.progress_bar h2 {
+  margin-bottom: 0px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+.progress_bar .pro-bar {
+  background: hsl(0, 0%, 97%);
+  box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.1) inset;
+  height: 4px;
+  margin-bottom: 12px;
+  margin-top: 40px;
+  position: relative;
+}
+.progress_bar .progress_bar_title {
+  color: hsl(218, 4%, 50%);
+  font-size: 12px;
+  font-weight: 400;
+  position: relative;
+  top: -25px;
+  z-index: 1;
+}
+.progress_bar .progress_number {
+  float: right;
+  margin-top: 0px;
+}
+.progress_bar .progress-bar-inner {
+  background-color: hsl(0, 0%, 94%);
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress_bar .progress-bar-inner:before {
+  content: "";
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  z-index: 1;
+}
+.progress_bar .progress-bar-inner:after {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background-color: inherit;
+  border-radius: 50%;
+  position: absolute;
+  right: -4px;
+  top: -5px;
+}
+
+/* --------------------------------------------------------------------  */
+
+/* head and title css for all section */
+
+.head {
+  letter-spacing: 4px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+}
+.title {
+  letter-spacing: 2px;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+}
+
+/* education section  */
+
+.education_inner {
+  margin-top: 6rem;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+.cir_1 {
+  top: 0%;
+}
+.cir_2 {
+  top: 50%;
+}
+.cir_3 {
+  top: 100%;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: #d1d1d1;
+  position: absolute;
+}
+.edu_bar {
+  height: 500px;
+  width: 2px;
+  background-color: #d1d1d1;
+}
+
+.timeline {
+  position: absolute;
+}
+.timeline_1 {
+  top: -5%;
+  left: 55%;
+}
+.timeline_2 {
+  top: 45%;
+  right: 55%;
+}
+.timeline_3 {
+  top: 95%;
+  left: 55%;
+}
+.timeline h1 {
+  font-size: larger;
+  font-weight: 800;
+}
+
+.timeline h3 {
+  font-size: medium;
+  font-weight: 500;
+  color: #676767;
+  /* font-size: 1rem; */
+  margin-bottom: 1rem;
+}
+.timeline div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.timeline div span {
+  font-size: small;
+  font-weight: 600;
+}
+.icon_planner {
+  width: 20px;
+  height: 20px;
+}
+
+/* contact  */
+
+.contact p {
+  width: 500px;
+  margin: auto;
+  text-align: center;
+  font-size: small;
+  font-weight: 300;
+  color: #676767;
+}
+.contact div {
+  text-align: center;
+}
+a.contact_btn {
+  background-color: white;
+  color: #5372e2;
+  font-weight: 600;
+  border: 2px solid #5372e2;
+}
+
+/* projects  */
+
+.all_projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.all_projects .project_1 {
+  flex-direction: row-reverse;
+}
+.all_projects .project_3 {
+  flex-direction: row-reverse;
+}
+.project {
+  display: flex;
+  gap: 2rem;
+  transition: all 300ms ease-in-out;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.project .img {
+  max-width: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/prjt.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_1 .img {
+  max-width: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/samplimg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_2 .img {
+  max-width: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/samp2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.project_3 .img {
+  max-width: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/movie.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.all_projects .project_1 .project_desc {
+  align-items: flex-start;
+}
+.project_1 .project_desc p {
+  text-align: left;
+}
+.project_desc {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.project_desc a {
+  text-decoration: none;
+  color: black;
+}
+.project_desc p {
+  font-size: smaller;
+  margin: 2rem 0rem;
+  max-width: 500px;
+  text-align: right;
+}
+
+.tags {
+  /* border: 1px solid black; */
+  display: flex;
+  gap: 1rem;
+}
+.tags span {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #5372e2;
+  /* transition: all 300ms ease-in-out; */
+}
+.source {
+  /* border: 1px solid black; */
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.source a {
+  text-decoration: none;
+  display: block;
+  height: fit-content;
+  width: 25px;
+  height: 25px;
+}
+
+.source a img {
+  width: 100%;
+  height: 100%;
+}
+
+/* footer  */
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: auto;
+}
+
+footer ul li {
+  width: 30px;
+  height: 30px;
+  list-style: none;
+}
+footer p {
+  margin-top: 1rem;
+  font-size: small;
+  text-align: center;
+}
+/* mobile responsive */
+
+@media screen and (max-width: 800px) {
+  .hero_name {
+    flex-direction: column;
+    align-items: center;
+  }
+  .creative_name {
+    padding: 1rem;
+  }
+  .herobg {
+    width: 50%;
+  }
+  nav,
+  footer {
+    padding: 1rem 1rem;
+  }
+  main {
+    padding: 0rem 1rem;
+  }
+  section {
+    padding: 6rem 0rem;
+  }
+  .timeline_1 {
+    left: 35px;
+  }
+  .timeline_2 {
+    left: 35px;
+    right: auto;
+  }
+  .timeline_3 {
+    left: 35px;
+  }
+  .education_inner {
+    justify-content: flex-start;
+  }
+  nav ul {
+    display: none;
+  }
+  .img {
+    display: none;
+  }
+}
