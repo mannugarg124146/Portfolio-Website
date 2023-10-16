@@ -358,9 +358,18 @@ a.contact_btn {
   background-position: center;
 }
 .project_3 .img {
-  max-width: 400px;
+  max-width: 100%;
   flex-basis: 100%;
   background-image: url("../images/movie.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.project_4 .img {
+  max-width: 400px;
+  flex-basis: 100%;
+  background-image: url("../images/sort2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
